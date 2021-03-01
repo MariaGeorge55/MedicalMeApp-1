@@ -10,15 +10,9 @@ class ListAllJournals extends StatefulWidget {
   }
 }
 
-<<<<<<< HEAD
 class _ListAllJournalState extends State<ListAllJournals> {
-  var diary = new Diaries();
-  Future<bool> deletediary(Diaries diary) async {
-=======
-class _listAllJournalState extends State<listAllJournals> {
   var diary = new d.Diaries();
   Future<bool> deletediary(d.Diaries diary) async {
->>>>>>> e9ebae1216bb2c7f2daa7f0f45804349e76a3f48
     //print(record.title);
     await Firestore.instance
         .collection('Diaries')

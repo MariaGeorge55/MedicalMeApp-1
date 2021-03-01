@@ -10,9 +10,9 @@ import 'Screens/viewjournals.dart';
 import 'Screens/searchfaq.dart';
 
 class HomePage extends StatelessWidget {
-  final User u;
-  HomePage({this.u});
-
+  User u = new User();
+  HomePage.ut({this.u});
+  HomePage();
   @override
   Widget build(BuildContext context) {
     var Row1 = Row(
@@ -103,7 +103,7 @@ class HomePage extends StatelessWidget {
                   onTap: () => Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => HomePage(u: this.u)),
+                            builder: (context) => HomePage.ut(u: this.u)),
                       )),
               ListTile(
                   title: Text('Profile'),
