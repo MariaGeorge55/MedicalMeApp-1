@@ -34,6 +34,8 @@ class LoginFormState extends State<LoginForm> {
   final passwordcontroller = TextEditingController();
   bool checkuserexist() {
     User u = users.validatelogin(emailcontroller.text, passwordcontroller.text);
+    print("jhrjrrjrjrjrjjr");
+    print(u.email);
     if (u != null) {
       return true;
     } else {
